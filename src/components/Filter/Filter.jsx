@@ -27,11 +27,11 @@ Filter.propTypes = {
   filterContact: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({ filter }) => {
+const mapStateToProps = (state) => {
   return (
-    console.log(filter),
+    console.log(state.contacts.filter),
     {
-      filter: getFilter(filter),
+      filter: getFilter(state.contacts.filter),
     }
   );
 };
