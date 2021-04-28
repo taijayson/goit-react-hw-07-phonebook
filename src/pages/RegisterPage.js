@@ -26,7 +26,7 @@ class RegisterPage extends Component {
     return (
       <div>
         <h1>Register</h1>
-        <form onSubmit={this.handleSubmit} autocomplete="off">
+        <form onSubmit={this.handleSubmit} autoComplete="off">
           <label>
             Name
             <input

@@ -9,10 +9,10 @@ import { Route, Switch } from "react-router";
 import { connect } from "react-redux";
 
 import HeaderBar from "./components/HeaderBar/HeaderBar";
-import { getCurrentUser } from "../redux/auth/authOperations";
+import { getCurrentUser } from "./redux/auth/authOperations";
 
 import PrivateRoute from "./routes/PrivateRoute";
-import PublicRoute from "./routes/PublicRoute";
+import PublicRoute from "./routes/PublickRoute";
 
 import "./App.css";
 
