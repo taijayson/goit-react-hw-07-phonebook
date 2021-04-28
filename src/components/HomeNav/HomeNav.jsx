@@ -1,15 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import styles from "./HomeNav.module.css";
 
 const HomeNav = () => {
-  const isAuth = useSelector((state) => state.auth.token);
+  //   const isAuth = useSelector((state) => state.auth.token);
   return (
-    <div>
-      <NavLink exact to="/">
+    <div className={styles.wrap}>
+      <NavLink className={styles.title} exact to="/">
         Home
       </NavLink>
-      <NavLink to="/contacts">Contacts</NavLink>
+      <NavLink className={styles.title} to="/contacts">
+        Contacts
+      </NavLink>
     </div>
   );
 };

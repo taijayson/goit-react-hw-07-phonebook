@@ -31,7 +31,7 @@ const mapStateToProps = (state) => {
   return (
     console.log(state.contacts.filter),
     {
-      filter: getFilter(state.contacts.filter),
+      filter: getFilter(state),
     }
   );
 };

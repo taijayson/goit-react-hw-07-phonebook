@@ -5,7 +5,7 @@
 // import { v4 as uuidv4 } from "uuid";
 
 import React, { Component, Suspense, lazy } from "react";
-import { Route, Switch } from "react-router";
+import { Switch } from "react-router";
 import { connect } from "react-redux";
 
 import HeaderBar from "./components/HeaderBar/HeaderBar";
@@ -27,7 +27,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="wrap">
         <HeaderBar />
         <Suspense fallback={<h2>Loading...</h2>}>
           <Switch>

@@ -1,6 +1,8 @@
+import styles from "./MainPage.module.css";
+
 const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
+  <div className={styles.wrap}>
+    <h1 className={styles.head}>Home Page</h1>
   </div>
 );
 
